@@ -1,0 +1,167 @@
+@font-face {
+  font-family: poppins-light;
+  src: url(./assests/fonts/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: poppins-med;
+  src: url(./assests/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: poppins-bold;
+  src: url(./assests/fonts/Poppins-Bold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.my-navigation {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px 0px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 70%;
+  justify-content: center;
+}
+.my-navigation .my-container {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.my-navigation .my-container .logo {
+  align-self: last baseline;
+}
+.my-navigation .my-container .logo h1 {
+  font-size: 1.9rem;
+  font-family: poppins-bold;
+  letter-spacing: 1px;
+  color: rgb(0, 153, 255);
+}
+.my-navigation .my-container .logo span {
+  color: black;
+}
+.my-navigation .my-container .menue {
+  display: flex;
+  gap: 2.5rem;
+  list-style-type: none;
+  align-items: center;
+  margin: 0;
+}
+.my-navigation .my-container .menue a {
+  text-decoration: none;
+  font-family: poppins-med;
+  color: black;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 2px;
+}
+.my-navigation .form-box .menue {
+  display: none;
+}
+.my-navigation .form-box .btn {
+  padding: 8px 15px;
+  background-color: rgb(0, 153, 255);
+  border-radius: 5px;
+  margin: 5px;
+  color: white;
+  border: none;
+  box-shadow: rgba(0, 153, 255, 0.555) 0px 5px 15px;
+}
+.my-navigation .form-box .btn a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+.my-navigation .form-box .bars-icon-btn {
+  display: none;
+}
+
+@media (max-width: 575.98px) {
+  .my-navigation {
+    width: 100%;
+    display: flex;
+    padding: 8px 10px;
+  }
+  .my-navigation .my-container {
+    width: 100% !important;
+  }
+  .my-navigation .my-container .menue {
+    display: none;
+  }
+  .my-navigation .my-container .btn {
+    display: none;
+  }
+  .my-navigation .my-container .bars-icon-btn {
+    display: block;
+  }
+  .my-navigation .form-box {
+    display: none;
+  }
+  .my-navigation .form-box .menue-res {
+    display: none;
+  }
+}
+@media (max-width: 767.98px) {
+  .my-navigation {
+    width: 100%;
+    display: flex;
+    padding: 8px 10px;
+  }
+  .my-navigation .my-container {
+    width: 100% !important;
+  }
+  .my-navigation .my-container .menue {
+    display: none;
+  }
+  .my-navigation .my-container .btn {
+    display: none;
+  }
+  .my-navigation .my-container .bars-icon-btn {
+    display: block;
+  }
+}
+@media (max-width: 991.98px) {
+  .my-navigation {
+    width: 100%;
+    display: flex;
+    padding: 8px 10px;
+  }
+  .my-navigation .my-container {
+    width: 100% !important;
+  }
+  .my-navigation .my-container .btn {
+    display: initial;
+  }
+  .my-navigation .my-container .bars-icon-btn {
+    display: none;
+  }
+  .my-navigation .my-container .menue {
+    display: none;
+  }
+  .my-navigation .form-box {
+    width: -moz-max-content;
+    width: max-content;
+    display: flex;
+    padding: 0px 15px;
+  }
+  .my-navigation .form-box .menue-res {
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+    gap: 1.4rem;
+    margin-right: 1rem;
+  }
+  .my-navigation .form-box .menue-res a {
+    text-decoration: none;
+    font-family: poppins-med;
+    font-size: 13px;
+    color: black;
+  }
+}/*# sourceMappingURL=style.css.map */
